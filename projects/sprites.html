@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sprites</title>
+    <style>
+        .icon {
+            width: 20px;
+            height: 20px;
+            background: transparent url(./resource/sprites.png) no-repeat;
+            display:inline-block;
+        }
+        .icon.collect {
+            background-position: -50px -10px;
+        }
+        .icon.cart {
+            background-position: -10px -10px;
+        }
+    </style>
+</head>
+<body>
+  <span class="icon collect"></span>  
+  <span class="icon cart"></span>
+</body>
+</html>
