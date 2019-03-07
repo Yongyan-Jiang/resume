@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Start Project</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1056832_d1syq6m137a.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_1073038_lrq8gcdj8qa.css">
+  <style>
+    html,body {
+      height: 100%;
+    }
+    header {
+      position: relative;
+      height: 100%;
+      min-height: 600px;
+      background: #000 url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center no-repeat;
+      background-size: cover;
+    }
+    header .logo {
+      color: #fed136;
+      font-size:32px;
+      float: left;
+      margin-top: 10px;
+    } 
+    header .nav {
+      float: right;
+    }
+    header .nav>li {
+      float: left;
+      margin: 10px;
+    }
+    header .nav a {
+      color:#fff;
+      font-size: 16px;
+      display:inline-block;
+      padding: 5px;
+    }
+    header .nav a:hover {
+      color: #fed136;
+    }
+    header .instro {
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    header .instro h1 {
+      font-size: 32px;
+    }
+    header .instro h2 {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    header .instro .button {
+      margin-top: 20px;
+    }
+    section {
+      margin-top:30px;
+      text-align: center;
+      min-height: 600px;
+    }
+    section > h2 {
+      margin-top: 100px;
+      font-size: 40px;
+    }
+    section > p,h3 {
+      margin-top: 10px;
+    }
+    section > .service > li {
+      float: left;
+      width: 33.33%;
+      margin-top: 40px;
+    }
+    section .service .iconfont {
+      font-size: 50px;
+      color: #fff;
+      padding: 20px;
+      background-color: #fed136;
+      border-radius: 50%;
+    }
+    section >ul p {
+      margin: 10px;
+    }
+    section .portfolio figure {
+      float: left;
+      margin: 20px;
+    }
+    section .portfolio img {
+      width: 360px;
+    }
+    section .portfolio a:hover {
+      opacity: 0.8;
+    }
+    section .portfolio figcaption {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    section .portfolio p {
+      color: #666;
+      margin-top: 10px;
+    }
+    section .timeline > li {
+      position: relative;
+      margin-top: 80px;      
+    }
+    section .timeline img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 6px solid #eee;
+    }
+    section .timeline .img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 6px solid #eee;
+      display: inline-block;
+      text-align: center;
+      background-color: #fed136;
+    }
+    .timeline .img p {
+      margin-top: 50px; 
+      font: 18px/1.5 Arial;
+      font-weight: bold;
+      color: #fff;
+    }
+    section .timeline > li:nth-child(odd) {
+      padding-right: calc(50% - 75px);
+      text-align: right;
+    }
+    section .timeline > li:nth-child(odd) img {
+      float: right;
+    }
+    section .timeline > li:nth-child(even) {
+      padding-left: calc(50% - 75px);
+      text-align: left;
+    }
+    section .timeline > li:nth-child(even) img {
+      float: left;
+    }
+    section .timeline dl {
+      margin: 0 200px;
+    }
+    section .timeline dt {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    section .timeline dd:nth-of-type(1) {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    section .timeline > li::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      height: 55px;
+      width: 2px;
+      background-color: #eee;
+      left: 50%;
+      margin-left: 1px;
+      top: 160px;
+    }
+    section .timeline > li:last-child:before {
+      height: 0;
+    }
+    section .team > li {
+      margin-top: 30px;
+      float: left;
+      width: 33.33%;
+    }
+    section .team img {
+      border: 1px solid #fff;
+      border-radius: 50%;
+    }
+    .btns .iconfont {
+      font-size: 26px;
+      color:#fff;
+      padding: 8px;
+      background-color: #333;
+      border-radius: 50%;
+    }
+    .btns .iconfont:hover {
+      background-color: #fed136;
+    }
+    section .endnote {
+      display: inline-block;
+      width: 800px;
+      margin-top: 50px;
+    }
+    section .ad li {
+      display: inline-block;
+      margin: 100px 30px 0 30px;
+    }
+    footer .contact {
+      background:#000 url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center no-repeat;
+      background-size: cover;
+    }
+    footer .contact h2,
+    footer .contact p {
+      color: #fff;
+      margin: 30px;
+    }
+    section .info {
+      float: left;
+      width: 50%;
+    }
+    section .message { 
+      float: right;
+      width: 50%;
+    }
+    section input,textarea {
+      width: 500px;
+      color: #aaa;
+      font-family: Arial;
+      font-weight: bold;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 3px;
+    }
+    section .message textarea {
+      height: 175px;
+    }
+    section .button {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    footer .copyright {
+      float: left;
+      margin: 30px 0 0 200px;
+    }
+    footer .terms {
+      float: right;
+      margin: 30px 200px 0 0;
+    }
+    footer .terms a {
+      color: #fed136;
+    }
+    footer .terms a:hover {
+      text-decoration: underline;
+    }
+    footer .btns {
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar layout clearfix">
+      <a href="#" class="logo">Start Project</a>
+      <ul class="nav">
+        <li><a href="#">SERVICE</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">TEAM</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="instro layout">
+      <h1>Welcome To Our Studio!</h1>
+      <h2>IT'S NICE TO MEET YOU</h2>
+      <a class="button" href="#">TELL ME MORE</a>
+    </div>
+  </header>
+  <main class="layout">
+    <section>
+      <h2>SERVICE</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <ul class="service clearfix">
+        <li>
+          <span class="iconfont icon-service1"></span>
+          <h3>E-Commerce</h3>
+          <p> Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </li>
+        <li>
+          <span class="iconfont icon-service2"></span>
+          <h3>Responsive Design</h3>
+          <p> Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </li>
+        <li>
+          <span class="iconfont icon-service3"></span>
+          <h3>Web Security</h3>
+          <p> Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>PORTFOLIO</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="portfolio clearfix">
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/roundicons.png" alt=""></a> 
+          <figcaption>Round Icons</figcaption>
+          <p>Graphic Design</p>
+        </figure>
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/startup-framework.png" alt=""></a>
+          <figcaption>Startup Framework</figcaption>
+          <p>Website Design</p>
+        </figure>
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/treehouse.png" alt=""></a>
+          <figcaption>Treehouse</figcaption>
+          <p>Website Design</p>
+        </figure>
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/golden.png" alt=""></a>
+          <figcaption>Golden</figcaption>
+          <p>Website Design</p>
+        </figure>
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/escape.png" alt=""></a>
+          <figcaption>Escape</figcaption>
+          <p>Website Design</p>
+        </figure>
+        <figure>
+          <a href="#"><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/portfolio/dreams.png" alt=""></a>
+          <figcaption>Dreams</figcaption>
+          <p>Website Design</p>
+        </figure>
+      </div>
+    </section>
+    <section>
+      <h2>ABOUT</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <ul class="timeline clearfix"> 
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/1.jpg" alt="">
+          <dl>
+            <dt>2009-2011</dt>
+            <dd>Our Humble Beginnings</dd>
+            <dd>Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/2.jpg" alt="">
+          <dl>
+            <dt>MARCH 2011</dt>
+            <dd>An Agency is Born</dd>
+            <dd>Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/3.jpg" alt="">
+          <dl>
+            <dt>DECEMBER 2012</dt>
+            <dd>Transition to Full Service</dd>
+            <dd>Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+          </dl>
+        </li>
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/about/4.jpg" alt="">
+          <dl>
+            <dt>JULY 2014</dt>
+            <dd>Phase Two Expansion</dd>
+            <dd>Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</dd>
+          </dl>
+        </li>
+        <li>
+          <div class="img"><p>BE PART OF OUR STORY!</p></div>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>OUR AMAZING TEAM</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <ul class="team">
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/5.jpg" alt="">
+          <h3>Kay Garland</h3>
+          <p>Lead Designer</p>
+          <div class="btns">
+            <a class="iconfont icon-phone" href="#"></a>
+            <a class="iconfont icon-wechat" href="#"></a>
+            <a class="iconfont icon-mailbox" href="#"></a>
+          </div>
+        </li>
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/6.jpg" alt="">
+          <h3>Larry Parker</h3>
+          <p>Lead Marketer</p>
+          <div class="btns">
+            <a class="iconfont icon-phone" href="#"></a>
+            <a class="iconfont icon-wechat" href="#"></a>
+            <a class="iconfont icon-mailbox" href="#"></a>
+          </div>
+        </li>
+        <li>
+          <img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/team/7.jpg" alt="">
+          <h3>Diana Pertersen</h3>
+          <p>Lead Developer</p>
+          <div class="btns">
+            <a class="iconfont icon-phone" href="#"></a>
+            <a class="iconfont icon-wechat" href="#"></a>
+            <a class="iconfont icon-mailbox" href="#"></a>
+          </div>
+        </li>
+      </ul>
+      <div class="endnote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+      <ul class="ad">
+        <li><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/envato.jpg" alt=""></li>
+        <li><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></li>
+        <li><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/themeforest.jpg" alt=""></li>
+        <li><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/creative-market.jpg" alt=""></li>
+      </ul>
+    </section>
+  </main>  
+  <footer>
+    <section class="contact">
+      <h2>CONTACT US</h2>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="clearfix">
+        <div class="info">
+          <ul>
+            <li><input id="name" type="text" placeholder="YOUR NAME*"></li>
+            <li><input id="email" type="text" placeholder="YOUR EMAIL*"></li>
+            <li><input id="phone" type="text" placeholder="YOUR PHONE*"></li>
+          </ul>
+        </div> 
+        <div class="message">
+          <textarea name="message" id="message">YOUR MESSAGE*</textarea>
+        </div>
+      </div>
+      <a class="button" href="#">SEND MESSAGE</a>
+    </section>
+    <div class="copyright">
+      <p>Copyright © Your Website 2014</p>
+    </div>
+    <div class="terms">
+      <a href="">Privacy Policy</a>
+      <a href="">Terms of Use</a>
+    </div>
+    <div class="btns">
+      <a class="iconfont icon-phone" href="#"></a>
+      <a class="iconfont icon-wechat" href="#"></a>
+      <a class="iconfont icon-mailbox" href="#"></a>
+    </div>
+  </footer>
+</body>
+</html>
