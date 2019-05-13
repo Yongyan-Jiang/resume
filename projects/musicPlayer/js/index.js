@@ -36,14 +36,14 @@ getMusic(function(list){
 })
 
 playBtn.onclick = function() {
-  var icon = this.querySelector('.iconfont')
-  if (icon.classList.contains('icon-play')) {
+  var icon = this.querySelector('.fa')
+  if (icon.classList.contains('fa-play')) {
     music.play()
   } else {
     music.pause()
   }
-  icon.classList.toggle('icon-play')
-  icon.classList.toggle('icon-pause')
+  icon.classList.toggle('fa-play')
+  icon.classList.toggle('fa-pause')
 }
 
 forwardBtn.onclick = loadNextMusic
