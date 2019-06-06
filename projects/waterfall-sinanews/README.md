@@ -1,5 +1,6 @@
 ## 新浪新闻浏览页
 > 通过新浪新闻API获取数据，使用jQuery和懒加载、瀑布流方法实现。
+
 [预览地址](https://yongyan-jiang.github.io/resume/projects/waterfall-sinanews)
 ## 实现原理
 当鼠标滚动页面内容下方的#load出现在视野窗口时：
