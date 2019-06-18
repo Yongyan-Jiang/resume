@@ -1,6 +1,6 @@
 # 茶余酒后音乐电台
 
-[预览](https://yongyan-jiang.github.io/resume/projects/music radio)
+[预览](https://yongyan-jiang.github.io/resume/projects/music-radio)
 
 ## 项目功能介绍
 一款可适配横屏、全屏的响应式音乐电台播放器
