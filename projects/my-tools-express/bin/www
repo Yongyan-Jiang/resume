@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var http = require('http')
+var app = require('../app')
+console.log(app)
+
+http.createServer(app).listen(8080)
+console.log('open https://localhost:8080')
